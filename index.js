@@ -246,11 +246,21 @@ Use an array method to fix this issue and console.log() to check your work. */
  who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889
  and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+        function get20s(array){
 
-  /* Code here */
+          let century20 = [];
 
-}
+          for(i = 0; i < array.length; i++) {
+              if ((array[i].years >= "1900") && (array[i].years <= "2000")) {
+                  century20.push(array[i]);
+              }
+          }
+
+          console.log(century20);
+        }
+
+        get20s(artists);
+
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
