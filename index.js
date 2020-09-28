@@ -285,7 +285,8 @@ Use an array method to fix this issue and console.log() to check your work. */
  
 
 /**
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array.
+Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
 id: 20,
@@ -297,11 +298,35 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+        function addArtist(id,name,years,genre,nationality,bio,wikipedia,paintings) {
 
-    /* Code here */
+          newArtist = {};
 
-  }
+          newArtist.id = id;
+          newArtist.name = name;
+          newArtist.years = years;
+          newArtist.genre = genre;
+          newArtist.nationality = nationality;
+          newArtist.bio = bio;
+          newArtist.wikipedia = wikipedia;
+          newArtist.paintings = paintings;
+
+          newArtists = Object.assign(artists, {newArtist});
+
+          console.log(newArtists);
+          console.log(newArtists.length);
+        }
+
+        addArtist({
+            "id": 20,
+            "name": "Shenica Graham",
+            "years": "1977 - ",
+            "genre": "Web Design",
+            "nationality": "African American",
+            "bio": "",
+            "wikipedia": "http://en.wikipedia.org/wiki/Shenica-Graham",
+            "paintings": 1}
+        );
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
