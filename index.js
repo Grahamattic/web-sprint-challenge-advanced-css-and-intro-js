@@ -317,16 +317,10 @@ At the end, this function should return the new array with information added"*/
           console.log(newArtists.length);
         }
 
-        addArtist({
-            "id": 20,
-            "name": "Shenica Graham",
-            "years": "1977 - ",
-            "genre": "Web Design",
-            "nationality": "African American",
-            "bio": "",
-            "wikipedia": "http://en.wikipedia.org/wiki/Shenica-Graham",
-            "paintings": 1}
+        addArtist(20,"Shenica Graham","1977 - ","Web Design","African American","My name is Shenica Renee Graham. You are viewing my portfolio archive including all of my design works. For web design projects specifically, view my website portfolio. I am an avid online content creator, recording artist, web and CSS designer, author, teacher, tutor, and creative thinker. If you are looking for someone with ideas, you have come to the right place. I have experience creating online programs, marketing solutions, branding, graphic designs, websites, publications, blogs, apparel, accessories, author and artist promotions, music, and so much more! Hire me for your next design project","http://en.wikipedia.org/wiki/Shenica-Graham",1
         );
+
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -338,14 +332,14 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
         function lotsOfArt(array){
 
-          let prolificArtists = [];
+            let prolificArtists = [];
 
-          for(i = 0; i < array.length; i++) {
-              if (array[i].paintings >= 100) {
-                  prolificArtists.push(array[i]);
-              }
-          }
-          console.log(prolificArtists);
+            for(i = 0; i < array.length; i++) {
+                if (array[i].paintings >= 100) {
+                    prolificArtists.push(array[i]);
+                }
+            }
+            console.log(prolificArtists);
         }
 
         lotsOfArt(artists);
@@ -369,11 +363,13 @@ In HTML, every artist and associated content uses the following structure:
 <div class = "bio">Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.</div>
 </div>
 
-Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to format and console.log data like the example above. 
+Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to format and console.log 
+data like the example above. 
 
 The function should console.log 50 chunks of HTML code that match the structure above. 
 
-‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
+‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file
+if you'd like to see what that would look like. */
 
 function getHTML(/* Code here */){
 
