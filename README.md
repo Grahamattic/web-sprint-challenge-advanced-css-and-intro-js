@@ -23,9 +23,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+        Web accessibility makes web pages and the internet in general, accessible to all people online, regardless of how they prefer to or need to interact with the page. Accessibility became important for people with disabilities to be able to access the internet in non-traditional ways. However, accessible design design benefits not only people with disabilities. For example, closed captioning is not just good for the deaf, it is also useful in loud environments when headphones are not an option.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+        1. Use colors that contrast well. Avoid red and green in general – these are tricky colors for people who are colorblind. Every colorfully displayed component should have a visual counterpart.
+        
+        2. Use responsive (scalable) units. Browsers have settings that allow users to change a page’s font size, but that only works if the associated CSS is scalable—REM, EM, and % are all scalable.
+        
+        3. Make sure that HTML tags are semantic so that users who rely on screen readers can navigate accordingly. Semantic tags typically have English meaning, like <header>, <main>, <nav>, <button> and <article>. Non-semantic tags are those without any English meaning, like <div> and <span>. Similarly, when designing universally, you should be sure to include meaningful id and class names, and always give your images “alt” text.
+
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+        A variable is a way to store, change and use data in code. There are three keywords used to declare variables -var, let, and const. At Lambda School, we avoid using var because it is not as strict as let and const and allows some situations that we want to avoid. Each keyword has slightly different use cases majorly based on what happens when you change the value of the variable. 
+
 4. What is the purpose of using functions in code?
+
+        Functions are blocks of code that allow developers to repeat sections of code without copying and pasting (which could cause errors and makes your code not DRY). Code can be effective with just a single line. Functions can collect steps in a process while producing the same output as if each step were coded separately.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
